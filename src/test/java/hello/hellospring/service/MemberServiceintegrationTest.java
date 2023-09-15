@@ -15,11 +15,11 @@ class MemberServiceIntegrationTest {
     @Autowired MemberService memberService;
     @Autowired MemberRepository memberRepository;
     @Test
-    @Commit
+//    @Commit
     public void 회원가입() throws Exception {
         //Given
         Member member = new Member();
-        member.setName("hello 100");
+        member.setName("hellos");
         //When
         Long saveId = memberService.join(member);
         //Then
